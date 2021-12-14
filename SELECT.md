@@ -28,5 +28,10 @@ r->
 SELECT * FROM `exams` WHERE `date` = "2020-06-20" AND HOUR(`hour`) >= 14;
 
 6. Selezionare tutti i corsi di laurea magistrale 
+
+r->
+SELECT * FROM `degrees` WHERE `level` = "magistrale";
 7. Da quanti dipartimenti è composta l'università? 
+
+
 8. Quanti sono gli insegnanti che non hanno un numero di telefono?
