@@ -40,6 +40,7 @@ r-> 12
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono?
 
-r->
+r-> 50
+(select * FROM `teachers` WHERE `phone` is null;)
 
 
