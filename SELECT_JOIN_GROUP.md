@@ -26,7 +26,8 @@ r-> SELECT courses.name FROM courses JOIN course_teacher ON courses.id = course_
 r-> SELECT students.surname, students.name, degrees.name, departments.name FROM students JOIN degrees ON degrees.id = students.degree_id JOIN departments ON departments.id = degrees.department_id ORDER BY students.surname ASC;
 
 - Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
-r-> 
+r-> SELECT degrees.name AS degree_name, courses.name AS course_name, teachers.name AS teacher_name, teachers.surname AS teacher_surname FROM courses JOIN course_teacher ON courses.id = course_teacher.course_id JOIN teachers ON course_teacher.teacher_id = teachers.id JOIN degrees ON courses.degree_id = degrees.id;
+
 
 - Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
 r-> 
