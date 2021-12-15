@@ -9,7 +9,7 @@ r-> SELECT COUNT(id) AS teacher_same_address, office_address FROM teachers GROUP
 r-> SELECT exam_id, AVG(vote) AS vote_average FROM exam_student GROUP BY exam_id;
 
 - Contare quanti corsi di laurea ci sono per ogni dipartimento
-r->
+r-> SELECT department_id, COUNT(department_id) AS `department_number` FROM degrees GROUP BY department_id
 
 
 Query con Join
