@@ -1,12 +1,16 @@
 Query con Group by
 - Contare quanti iscritti ci sono stati ogni anno
-r-> SELECT COUNT(id) as students_enroled, enrolment_date FROM students GROUP BY enrolment_date;
+r-> SELECT COUNT(id) AS students_enroled, enrolment_date FROM students GROUP BY enrolment_date;
 
 - Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+r-> SELECT COUNT(id) AS teacher_same_address, office_address FROM teachers GROUP BY office_address;
 
 - Calcolare la media dei voti di ogni appello d'esame
+r->
 
 - Contare quanti corsi di laurea ci sono per ogni dipartimento
+r->
+
 
 Query con Join
 - Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
