@@ -17,7 +17,7 @@ Query con Join
 r-> SELECT students.name, students.surname, degrees.name FROM students JOIN degrees ON students.degree_id = degrees.id WHERE degrees.name = "Corso di Laurea in Economia"
 
 - Selezionare tutti i Corsi di Laurea del Dipartimento di Neuroscienze
-r-> 
+r-> SELECT degrees.name FROM degrees JOIN departments ON degrees.department_id = departments.id WHERE departments.name = "Dipartimento di Neuroscienze"
 
 - Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
 r-> 
