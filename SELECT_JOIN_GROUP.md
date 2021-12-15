@@ -30,7 +30,8 @@ r-> SELECT degrees.name AS degree_name, courses.name AS course_name, teachers.na
 
 
 - Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
-r-> 
+r-> SELECT DISTINCT teachers.name, teachers.surname FROM teachers JOIN course_teacher ON teachers.id = course_teacher.teacher_id JOIN courses ON course_teacher.course_id = courses.id JOIN degrees ON courses.degree_id = degrees.id JOIN departments ON degrees.department_id = departments.id WHERE departments.name = "Dipartimento di Matematica";
+
 
 - BONUS: Selezionare per ogni studente quanti tentativi d’esame ha sostenuto per superare ciascuno dei suoi esami
 r-> 
