@@ -6,7 +6,7 @@ r-> SELECT COUNT(id) AS students_enroled, enrolment_date FROM students GROUP BY 
 r-> SELECT COUNT(id) AS teacher_same_address, office_address FROM teachers GROUP BY office_address;
 
 - Calcolare la media dei voti di ogni appello d'esame
-r->
+r-> SELECT exam_id, AVG(vote) AS vote_average FROM exam_student GROUP BY exam_id;
 
 - Contare quanti corsi di laurea ci sono per ogni dipartimento
 r->
